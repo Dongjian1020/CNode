@@ -21,14 +21,14 @@ public class AppController  extends Application implements Thread.UncaughtExcept
 
         if (!BuildConfig.DEBUG) {
             Thread.setDefaultUncaughtExceptionHandler(this);
-
-            MobclickAgent.setDebugMode(BuildConfig.DEBUG);
-            MobclickAgent.setCheckDevice(false);
         }
+
+        MobclickAgent.setDebugMode(BuildConfig.DEBUG);
+        MobclickAgent.setCheckDevice(false);
     }
 
     @Override
     public void uncaughtException(Thread t, Throwable e) {
-        CrashL
+        // TODO: 17/6/30  
     }
 }

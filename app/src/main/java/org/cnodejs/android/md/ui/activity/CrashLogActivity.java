@@ -8,7 +8,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import org.cnodejs.android.md.R;
 import org.cnodejs.android.md.ui.base.StatusBarActivity;
+import org.cnodejs.android.md.ui.util.ThemeUtils;
 
 import butterknife.BindView;
 
@@ -31,8 +33,9 @@ public class CrashLogActivity extends StatusBarActivity implements Toolbar.OnMen
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        Theme
+        ThemeUtils.configThemeBeforeOnCreate(this, R.style.AppThemeLight,R.style.AppThemeDark);
         super.onCreate(savedInstanceState);
+        // TODO: 17/6/30  
 
     }
 
